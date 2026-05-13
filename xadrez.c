@@ -1,4 +1,11 @@
 #include <stdio.h>
+// Declaração da recursividade
+void moverBispo(int casas) {
+   if (casas > 0) {
+      printf("Baixo direita\n");
+      moverBispo(casas - 1);
+   }
+}
 
 // Desafio de Xadrez - MateCheck
 // Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
@@ -66,6 +73,9 @@ int main(){
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
     // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+     printf("2° Movimento do bispo:\n");
+     moverBispo(5);
+
 
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
