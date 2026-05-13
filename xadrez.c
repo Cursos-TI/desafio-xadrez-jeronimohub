@@ -1,9 +1,25 @@
 #include <stdio.h>
 // Declaração da recursividade
+// Bispo
 void moverBispo(int casas) {
    if (casas > 0) {
       printf("Baixo direita\n");
       moverBispo(casas - 1);
+   }
+}
+// Torre
+void moverTorre(int casas) {
+   if (casas > 0) {
+      printf("Cima\n");
+      moverTorre(casas - 1);
+   }
+}
+
+// Rainha
+void moverRainha(int casas) {
+   if (casas > 0) {
+      printf("Direita\n");
+      moverRainha(casas - 1);
    }
 }
 
@@ -73,8 +89,20 @@ int main(){
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
     // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+    // Bispo
      printf("2° Movimento do bispo:\n");
      moverBispo(5);
+     printf("\n");
+
+    // Torre
+     printf("2° Movimento da torre:\n");
+     moverTorre(5);
+     printf("\n");
+
+    // Torre
+     printf("2° Movimento da rainha:\n");
+     moverRainha(8);
+     printf("\n");
 
 
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
