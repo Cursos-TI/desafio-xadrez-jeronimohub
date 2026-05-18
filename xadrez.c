@@ -40,13 +40,13 @@ int main(){
     
     // Implementação de Movimentação do Bispo
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal (5 casas na diagonal superior direita).
-    printf("Movimento do bispo:\n");
+    printf("Movimento do bispo com loop aninhado:\n");
     
-    while (b <= 5)
-    {
-       printf("Cima direita\n");
-       b++;  
+    for (int B = 0; B < 5; B++)
+        for (int b = 0; b < 1; b++){
+         printf("Cima direita\n");
     }
+
        printf("\n");
 
     // Implementação de Movimentação da Torre
