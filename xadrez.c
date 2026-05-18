@@ -1,6 +1,7 @@
+
 #include <stdio.h>
 // Declaração da recursividade
-// Bispo
+// Bispo 
 void moverBispo(int casas) {
    if (casas > 0) {
       printf("Baixo direita\n");
@@ -72,18 +73,7 @@ int main(){
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
-    printf("Movimento do cavalo:\n"); 
-    int movimentodoC = 1; //controla o movimento em "L"
-    int C; // C de cavalo
     
-    while (movimentodoC--)
-    {
-      for (C = 0; C < 2; C++) {
-         printf("Cima\n"); // Imprime "cima"
-      }
-         printf("Direita\n"); // Imprime direita
-    } 
-         printf("\n");
 
     
     // Nível Mestre - Funções Recursivas e Loops Aninhados
@@ -99,7 +89,7 @@ int main(){
      moverTorre(5);
      printf("\n");
 
-    // Torre
+    // Rainha
      printf("2° Movimento da rainha:\n");
      moverRainha(8);
      printf("\n");
@@ -108,5 +98,20 @@ int main(){
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
 
+    // Movimento do cavalo com loops aninhados, continue e break.
+    printf("Movimento do cavalo com loops complexos:\n");
+    
+    for(int i = 0; i < 2; i++) {
+       for (int j = 0; j < 2; j++) {
+      if (i == 1 && j == 1) {
+         continue; // Pula a iteração quando i e j são ambos iguais a 1
+      }
+      printf("Cima\n"); // Imprime "cima"
+   }
+       printf("Direita\n"); // Imprime "direita"
+         break; // Encerra o loop externo após a primeira iteração
+}
+
+         printf("\n");
     return 0;
 }
